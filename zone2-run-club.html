@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZONE 2 Run Club - Where Every Runner Belongs</title>
+    <link rel="stylesheet" href="zone2-styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-running"></i>
+          <span>ZONE 2</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content" style="opacity: 1; transform: translateY(0)">
+        <div class="hero-text">
+          <h1>Welcome to <span class="highlight">ZONE 2</span></h1>
+          <h2>Where Every Runner Belongs</h2>
+          <p>
+            Join our community of passionate runners, from beginners to marathon
+            champions. Experience the joy of running together, pushing limits,
+            and achieving goals you never thought possible.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="scrollToSection('membership')">
+              <i class="fas fa-user-plus"></i>
+              Join Now
+            </button>
+            <button class="btn-secondary" onclick="scrollToSection('events')">
+              <i class="fas fa-calendar-alt"></i>
+              View Events
+            </button>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Active Members</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Weekly Runs</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="12">0</div>
+            <div class="stat-label">Races This Year</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="running-animation">
+          <i class="fas fa-running"></i>
+        </div>
+        <div class="floating-elements">
+          <div class="floating-element" style="--delay: 0s">🏃‍♂️</div>
+          <div class="floating-element" style="--delay: 1s">🏃‍♀️</div>
+          <div class="floating-element" style="--delay: 2s">🏃‍♂️</div>
+          <div class="floating-element" style="--delay: 3s">🏃‍♀️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About ZONE 2</h2>
+          <p>More than just a running club - we're a community</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2018, ZONE 2 started as a small group of friends who
+              loved running together. Today, we've grown into a thriving
+              community of over 500 runners of all levels, united by our passion
+              for the sport and our commitment to supporting each other's goals.
+            </p>
+
+            <h3>What Makes Us Different</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                  <h4>Inclusive Community</h4>
+                  <p>
+                    All fitness levels welcome - from walkers to elite runners
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <div>
+                  <h4>Expert Coaching</h4>
+                  <p>
+                    Led by certified coach CHARAN K S - personalized training
+                    plans for every runner
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-trophy"></i>
+                <div>
+                  <h4>Race Support</h4>
+                  <p>Team participation in local and national races</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Flexible Schedule</h4>
+                  <p>Multiple run times throughout the week</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-running"></i>
+              <div class="image-overlay">
+                <h4>Join Our Next Run</h4>
+                <p>Every Tuesday & Thursday at 6:30 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section id="coaches" class="coaches">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet Our Coach</h2>
+          <p>Expert guidance from certified professionals</p>
+        </div>
+        <div class="coaches-grid">
+          <div class="coach-card featured">
+            <div class="coach-image">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="coach-info">
+              <h3>CHARAN K S</h3>
+              <p class="coach-title">Head Coach & Founder</p>
+              <div class="coach-credentials">
+                <span class="credential">Certified Running Coach</span>
+                <span class="credential">Sports Science Graduate</span>
+                <span class="credential">10+ Years Experience</span>
+              </div>
+              <p class="coach-bio">
+                CHARAN K S brings over a decade of running expertise to ZONE 2.
+                As a certified running coach and sports science graduate, he has
+                helped hundreds of runners achieve their goals, from first-time
+                5K finishers to Boston Marathon qualifiers.
+              </p>
+              <div class="coach-specialties">
+                <h4>Specialties:</h4>
+                <ul>
+                  <li>Marathon Training</li>
+                  <li>Speed Development</li>
+                  <li>Injury Prevention</li>
+                  <li>Nutrition Planning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+      <div class="container">
+        <div class="section-header">
+          <h2>Upcoming Events</h2>
+          <p>Join us for runs, races, and community events</p>
+        </div>
+        <div class="events-grid">
+          <div class="event-card featured">
+            <div class="event-date">
+              <span class="day">15</span>
+              <span class="month">MAR</span>
+            </div>
+            <div class="event-content">
+              <h3>Spring Marathon Training</h3>
+              <p class="event-time">
+                <i class="fas fa-clock"></i> 6:30 AM - 8:30 AM
+              </p>
+              <p class="event-location">
+                <i class="fas fa-map-marker-alt"></i> Central Park
+              </p>
+              <p class="event-description">
+                Join our marathon training group for the upcoming spring season.
+                All paces welcome!
+              </p>
+              <div class="event-stats">
+                <span><i class="fas fa-users"></i> 45 registered</span>
+                <span><i class="fas fa-route"></i> 20 miles</span>
+              </div>
+              <button class="btn-event">Register Now</button>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">22</span>
+              <span class="month">MAR</span>
+            </div>
+            <div class="event-content">
+              <h3>Speed Work Session</h3>
+              <p class="event-time">
+                <i class="fas fa-clock"></i> 6:00 PM - 7:30 PM
+              </p>
+              <p class="event-location">
+                <i class="fas fa-map-marker-alt"></i> Track Stadium
+              </p>
+              <p class="event-description">
+                High-intensity interval training to improve your speed and
+                endurance.
+              </p>
+              <div class="event-stats">
+                <span><i class="fas fa-users"></i> 32 registered</span>
+                <span><i class="fas fa-route"></i> Track workout</span>
+              </div>
+              <button class="btn-event">Register Now</button>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">29</span>
+              <span class="month">MAR</span>
+            </div>
+            <div class="event-content">
+              <h3>Trail Running Adventure</h3>
+              <p class="event-time">
+                <i class="fas fa-clock"></i> 7:00 AM - 10:00 AM
+              </p>
+              <p class="event-location">
+                <i class="fas fa-map-marker-alt"></i> Mountain Trail
+              </p>
+              <p class="event-description">
+                Explore beautiful mountain trails with our experienced trail
+                runners.
+              </p>
+              <div class="event-stats">
+                <span><i class="fas fa-users"></i> Register yourself</span>
+                <span><i class="fas fa-route"></i> 8 miles</span>
+              </div>
+              <button class="btn-event">Register Now</button>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">05</span>
+              <span class="month">APR</span>
+            </div>
+            <div class="event-content">
+              <h3>Beginner's Run</h3>
+              <p class="event-time">
+                <i class="fas fa-clock"></i> 9:00 AM - 10:00 AM
+              </p>
+              <p class="event-location">
+                <i class="fas fa-map-marker-alt"></i> Community Center
+              </p>
+              <p class="event-description">
+                Perfect for new runners! Learn proper form and build confidence.
+              </p>
+              <div class="event-stats">
+                <span><i class="fas fa-users"></i> 18 registered</span>
+                <span><i class="fas fa-route"></i> 3 miles</span>
+              </div>
+              <button class="btn-event">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="training">
+      <div class="container">
+        <div class="section-header">
+          <h2>Training Programs</h2>
+          <p>Structured programs for every level and goal</p>
+        </div>
+        <div class="training-programs">
+          <div class="program-card">
+            <div class="program-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Beginner Program</h3>
+            <div class="program-details">
+              <p><strong>Duration:</strong> 8 weeks</p>
+              <p><strong>Frequency:</strong> 3x per week</p>
+              <p><strong>Goal:</strong> Run 5K comfortably</p>
+            </div>
+            <ul class="program-features">
+              <li><i class="fas fa-check"></i> Couch to 5K progression</li>
+              <li><i class="fas fa-check"></i> Proper running form</li>
+              <li><i class="fas fa-check"></i> Injury prevention</li>
+              <li><i class="fas fa-check"></i> Nutrition guidance</li>
+              <li><i class="fas fa-check"></i> Coach CHARAN K S support</li>
+            </ul>
+            <div class="program-price">$99/month</div>
+            <button class="btn-program">Start Program</button>
+          </div>
+
+          <div class="program-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="program-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h3>Intermediate Program</h3>
+            <div class="program-details">
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p><strong>Frequency:</strong> 4x per week</p>
+              <p><strong>Goal:</strong> Half Marathon</p>
+            </div>
+            <ul class="program-features">
+              <li><i class="fas fa-check"></i> Speed & endurance training</li>
+              <li><i class="fas fa-check"></i> Race strategy</li>
+              <li><i class="fas fa-check"></i> Strength training</li>
+              <li><i class="fas fa-check"></i> Recovery protocols</li>
+              <li>
+                <i class="fas fa-check"></i> Personal coaching with CHARAN K S
+              </li>
+            </ul>
+            <div class="program-price">$149/month</div>
+            <button class="btn-program">Start Program</button>
+          </div>
+
+          <div class="program-card">
+            <div class="program-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Advanced Program</h3>
+            <div class="program-details">
+              <p><strong>Duration:</strong> 16 weeks</p>
+              <p><strong>Frequency:</strong> 5x per week</p>
+              <p><strong>Goal:</strong> Marathon PR</p>
+            </div>
+            <ul class="program-features">
+              <li><i class="fas fa-check"></i> Elite training methods</li>
+              <li><i class="fas fa-check"></i> Personalized coaching</li>
+              <li><i class="fas fa-check"></i> Performance analytics</li>
+              <li><i class="fas fa-check"></i> Mental training</li>
+              <li><i class="fas fa-check"></i> One-on-one with CHARAN K S</li>
+            </ul>
+            <div class="program-price">$199/month</div>
+            <button class="btn-program">Start Program</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+      <div class="container">
+        <div class="section-header">
+          <h2>Choose Your Membership</h2>
+          <p>Flexible options to fit your running journey</p>
+        </div>
+        <div class="membership-plans">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Basic</h3>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">29</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> 2 group runs per week</li>
+              <li><i class="fas fa-check"></i> Access to training plans</li>
+              <li><i class="fas fa-check"></i> Community forum</li>
+              <li><i class="fas fa-check"></i> Basic nutrition guide</li>
+              <li><i class="fas fa-times"></i> Personal coaching</li>
+              <li><i class="fas fa-times"></i> Race discounts</li>
+            </ul>
+            <button class="btn-plan">Choose Basic</button>
+          </div>
+
+          <div class="plan-card featured">
+            <div class="popular-badge">Most Popular</div>
+            <div class="plan-header">
+              <h3>Premium</h3>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">59</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Unlimited group runs</li>
+              <li><i class="fas fa-check"></i> Personalized training plans</li>
+              <li><i class="fas fa-check"></i> Monthly coaching session</li>
+              <li><i class="fas fa-check"></i> Race discounts (20%)</li>
+              <li><i class="fas fa-check"></i> Nutrition consultation</li>
+              <li><i class="fas fa-check"></i> Injury prevention workshop</li>
+            </ul>
+            <button class="btn-plan">Choose Premium</button>
+          </div>
+
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Elite</h3>
+              <div class="plan-price">
+                <span class="currency">$</span>
+                <span class="amount">99</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Everything in Premium</li>
+              <li><i class="fas fa-check"></i> Weekly personal coaching</li>
+              <li><i class="fas fa-check"></i> Performance testing</li>
+              <li><i class="fas fa-check"></i> Race strategy planning</li>
+              <li><i class="fas fa-check"></i> Priority event registration</li>
+              <li><i class="fas fa-check"></i> Elite training camps</li>
+            </ul>
+            <button class="btn-plan">Choose Elite</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Members Say</h2>
+          <p>Real stories from real runners</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "ZONE 2 transformed my relationship with running. I went from
+                hating every step to completing my first marathon. The community
+                support is incredible!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Marathon Finisher</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "The coaching at ZONE 2 is top-notch. My 5K time improved by 3
+                minutes in just 8 weeks. The personalized approach really
+                works!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Mike Chen</h4>
+                <p>5K Specialist</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "I've been running for years, but ZONE 2 taught me so much about
+                proper training, nutrition, and recovery. It's like having a
+                personal coach!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Emily Rodriguez</h4>
+                <p>Trail Runner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p>Ready to start your running journey?</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>123 Running Street<br />Sports City, SC 12345</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567<br />+1 (555) 123-4568</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@zone2runclub.com<br />coaching@zone2runclub.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Office Hours</h4>
+                <p>
+                  Mon-Fri: 6:00 AM - 8:00 PM<br />Sat-Sun: 7:00 AM - 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <select id="interest" required>
+                  <option value="">What interests you?</option>
+                  <option value="beginner">Beginner Program</option>
+                  <option value="intermediate">Intermediate Program</option>
+                  <option value="advanced">Advanced Program</option>
+                  <option value="membership">Membership Info</option>
+                  <option value="events">Upcoming Events</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your running goals..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-running"></i>
+              <span>ZONE 2</span>
+            </div>
+            <p>
+              Where every runner belongs. Join our community and discover the
+              joy of running together.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-strava"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#coaches">Coaches</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#training">Training</a></li>
+              <li><a href="#membership">Membership</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="#">Beginner Program</a></li>
+              <li><a href="#">Intermediate Program</a></li>
+              <li><a href="#">Advanced Program</a></li>
+              <li><a href="#">Trail Running</a></li>
+              <li><a href="#">Speed Training</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-details">
+              <p><i class="fas fa-map-marker-alt"></i> 123 Running Street</p>
+              <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> info@zone2runclub.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ZONE 2 Run Club. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="zone2-script.js"></script>
+  </body>
+</html>
